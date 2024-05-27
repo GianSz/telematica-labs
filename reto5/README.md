@@ -46,25 +46,9 @@ NOTA: En caso de haber realizado la subida de archivos por consola (es decir, si
 
 ## Subida de archivos a hadoop desde la interfaz de hue
 
-Para acceder y manipular los archivos del hdfs desde hue debemos ingresar al nodo master del cluster EMR usando el usuario ec2-user
+Teniendo en cuenta que ya se realizó el parche de hue para que sean visibles los archivos desde esta interfaz (es decir, teniendo en cuenta que se siguieron los pasos para la creación y configuración del cluster del laboratorio 0)
 
-`sudo ssh -i ~/vockey.pem ec2-user@ec2-54-211-75-220.compute-1.amazonaws.com`
-
-![Conexion ssh](./images/conexion-ssh.png)
-
-Luego, debemos editar el archivo de configuración de hue
-
-![Nano hue](./images/nano-hue.png)
-
-Debemos modificar la linea que dice 'webhdfs_url', cambiando el número de puerto de 14000 a 9870, así:
-
-![Modificacion del archivo](./images/modificacion.png)
-
-Por último debemos reiniciar el servicio hue para que este tome en cuenta los cambios realizados
-
-![](./images/reinicio-servicio.png)
-
-Listo, ya deberíamos tener todas las configuraciones realizadas. Ahora solo bastaría con ingresar a hue al apartado de 'files', para desde allí crear una carpeta llamada 'datasets'
+Para acceder y manipular los archivos del hdfs solo bastaría con ingresar a hue al apartado de 'files', para desde allí crear una carpeta llamada 'datasets'
 
 ![](./images/hue-carpeta.png)
 
