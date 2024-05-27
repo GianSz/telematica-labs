@@ -151,4 +151,4 @@ Por último debemos reiniciar el servicio hue para que este tome en cuenta los c
 
 Listo, ya deberíamos tener todas las configuraciones realizadasy y podríamos acceder al apartado de archivos de hue donde podríamos visualizar todos los archivos que han sido subidos al hdfs.
 
-IMPORTANTE: Recordar que cada que debido a que este parche se está haciendo sobre la intancia de un clúster, y estos son temporales, cada que un cluster muere y se crea uno nuevo, se debería realizar este proceso de nuevo, esto para que la nuevo isntancia master del nuevo cluster tenga el parche de hue.
+IMPORTANTE: Recordar que debido a que este parche se está haciendo sobre la intancia de un clúster, y estos son temporales, cada que un cluster muere y se crea uno nuevo, se debería realizar este proceso de nuevo, esto para que la nuevo instancia master del nuevo cluster tenga el parche de hue.
